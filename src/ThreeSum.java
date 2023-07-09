@@ -28,25 +28,6 @@ public class ThreeSum {
 		int[] nums_2 = { 0, 1, 1 };
 		int[] nums_3 = { 0, 0, 0 };
 
-		System.out.println(tS.createSetOfTriplets(nums_3));
-
-	}
-
-	public HashSet<HashMap<Integer, Integer>> createSetOfTriplets(int[] nums) {
-		ThreeSum tS = new ThreeSum();
-		HashSet<HashMap<Integer, Integer>> result = new HashSet<HashMap<Integer, Integer>>();
-		HashMap<Integer, Integer> triplet = new HashMap<Integer, Integer>();
-
-		for (int i = 0; i < nums.length; i++) {
-			for (int j = 0; j < nums.length; j++) {
-				// TODO
-				if (triplet.size() != 3) {
-					triplet.put(j, nums[j]);
-				}
-			}
-			result.add(triplet);
-		}
-		return result;
 	}
 
 	public boolean containsEntry(HashMap<Integer, Integer> triplet, Integer index, Integer value) {
