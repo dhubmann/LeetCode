@@ -1,11 +1,11 @@
-import java.util.Arrays;
-
 /*
  * ValidAnagram
  * Represents Valid Anagram
  * Author: Daniel Hubmann
  * Last Change: 29.07.2023
  */
+
+import java.util.Arrays;
 
 /**
  * Given two strings s and t, return true if t is an anagram of s, and false
