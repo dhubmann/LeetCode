@@ -10,5 +10,5 @@ A list of 75 examples that cover a lot of the most important concepts can be fou
 
 ## Completed Examples
 
--[x] Two Sum
+-[x] Two Sum  
 -[x] Contains Duplicate
