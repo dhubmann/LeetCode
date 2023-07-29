@@ -16,36 +16,33 @@ public class NumberOfOneBits {
 
 	public static void main(String[] args) {
 
-		// 00000000000000000000000000001011
-		String n0 = "101";
-		String n1 = "00000000000000000000000000001011";
-		String n2 = "00000000000000000000000010000000";
-		String n3 = "11111111111111111111111111111101";
-
-//		System.out.println(hammingWeight(n0));
-//		System.out.println(hammingWeight(n1));
-//		System.out.println(hammingWeight(n2));
-//		System.out.println(hammingWeight(n3));
-
 		int int0 = 0b101;
 		int int1 = 0b00000000000000000000000000001011;
 		int int2 = 0b00000000000000000000000010000000;
 		int int3 = 0b11111111111111111111111111111101;
-		int mask = 0b11111111111111111111111111111111;
 
-//		System.out.println(hammingWeight(int0));
-
-		System.out.println(hammingWeightShifting(int3));
+		System.out.println(bitCount(int3));
+		System.out.println(hammingWeight(int3));
+		System.out.println(hammingWeight2(int3));
 
 	}
-	
+
+	/*
+	 * Alternative solution - missing the point of the exercise though by using
+	 * .bitCount-method of Integer class
+	 */
+	public static int bitCount(int input) {
+		return Integer.bitCount(input);
+	}
+
 	/*
 	 * Since the input is always a 32 bit integer, the time complexity is constant
-	 * with O(32).
+	 * with O(32). It seems this only works with unsigned integers though - f.ex.
+	 * 'int3' returns 0.
 	 */
 	public static int hammingWeight(int input) {
 		int counter = 0;
-		while (input != 0) {
+		while (input > 0) {
 			counter += (input % 2);
 			input = input >> 1;
 		}
@@ -55,7 +52,7 @@ public class NumberOfOneBits {
 	/*
 	 * Alternative solution using bitwise AND operator
 	 */
-	public static int hammingWeightShifting(int input) {
+	public static int hammingWeight2(int input) {
 		int counter = 0;
 		while (input != 0) {
 			int temp = input - 1;
@@ -64,7 +61,10 @@ public class NumberOfOneBits {
 		}
 		return counter;
 	}
-	
+
+	/*
+	 * Alternative solution with a String input
+	 */
 	public static int hammingWeight(String input) {
 		int counter = 0;
 		for (int i = 0; i < input.length(); i++) {
