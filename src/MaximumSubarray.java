@@ -2,7 +2,7 @@
  * MaximumSubarray
  * Represents Maximum Subarray Example
  * Author: Daniel Hubmann
- * Last Change: 09.07.2023
+ * Last Change: 30.07.2023
  */
 
 /**
@@ -29,40 +29,44 @@ public class MaximumSubarray {
 
 	}
 
+	/*
+	 * Looking for the two lowest numbers in the array and dividing the array into
+	 * three subarrays. Then calculating the checksum of the three parts and return
+	 * the subarray with the highest checksum.
+	 */
 	public int compareSubarrays(int[] nums) {
-		MaximumSubarray mS = new MaximumSubarray();
-		int indexMin = mS.indexOfMinimum(nums);
-		int indexSecondMin = mS.indexOfSecondMinimum(nums, indexMin);
+		int indexMin = indexOfMinimum(nums);
+		int indexSecondMin = indexOfSecondMinimum(nums, indexMin);
 		int max = Integer.MIN_VALUE;
 
 		if (indexMin < indexSecondMin) {
-			mS.swap(indexMin, indexSecondMin);
+			swap(indexMin, indexSecondMin);
 		}
 
 		// Case 1:
-		if (mS.calculateChecksumOfArray(nums, 0, indexSecondMin - 1) > max) {
-			max = mS.calculateChecksumOfArray(nums, 0, indexSecondMin - 1);
+		if (calculateChecksumOfArray(nums, 0, indexSecondMin - 1) > max) {
+			max = calculateChecksumOfArray(nums, 0, indexSecondMin - 1);
 		}
 
 		// Case 2:
-		if (mS.calculateChecksumOfArray(nums, indexSecondMin + 1, indexMin - 1) > max) {
-			max = mS.calculateChecksumOfArray(nums, indexSecondMin + 1, indexMin - 1);
+		if (calculateChecksumOfArray(nums, indexSecondMin + 1, indexMin - 1) > max) {
+			max = calculateChecksumOfArray(nums, indexSecondMin + 1, indexMin - 1);
 		}
 
 		// Case 3:
-		if (mS.calculateChecksumOfArray(nums, indexMin + 1, nums.length - 1) > max) {
-			max = mS.calculateChecksumOfArray(nums, indexMin + 1, nums.length - 1);
+		if (calculateChecksumOfArray(nums, indexMin + 1, nums.length - 1) > max) {
+			max = calculateChecksumOfArray(nums, indexMin + 1, nums.length - 1);
 		}
 
 		// Case 4:
-		if (mS.calculateChecksumOfArray(nums, 0, nums.length - 1) > max) {
-			max = mS.calculateChecksumOfArray(nums, 0, nums.length - 1);
+		if (calculateChecksumOfArray(nums, 0, nums.length - 1) > max) {
+			max = calculateChecksumOfArray(nums, 0, nums.length - 1);
 		}
 
 		return max;
 	}
 
-	public int calculateChecksumOfArray(int[] nums, int start, int end) {
+	public static int calculateChecksumOfArray(int[] nums, int start, int end) {
 		int result = 0;
 		for (int i = start; i <= end; i++) {
 			result += nums[i];
@@ -70,7 +74,7 @@ public class MaximumSubarray {
 		return result;
 	}
 
-	public int indexOfMinimum(int[] nums) {
+	public static int indexOfMinimum(int[] nums) {
 		int min = Integer.MAX_VALUE;
 		int index = -1;
 		for (int i = 0; i < nums.length; i++) {
@@ -82,7 +86,7 @@ public class MaximumSubarray {
 		return index;
 	}
 
-	public int indexOfSecondMinimum(int[] nums, int index) {
+	public static int indexOfSecondMinimum(int[] nums, int index) {
 		int secondMin = Integer.MAX_VALUE;
 		int firstIndex = index;
 		int secondIndex = -1;
@@ -95,7 +99,7 @@ public class MaximumSubarray {
 		return secondIndex;
 	}
 
-	public void swap(int a, int b) {
+	public static void swap(int a, int b) {
 		int temp;
 		temp = a;
 		a = b;
