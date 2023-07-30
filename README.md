@@ -14,4 +14,7 @@ A list of 75 examples that cover a lot of the most important concepts can be fou
 -[x] Contains Duplicate  
 -[x] Number of 1 Bits  
 -[x] Counting Bits    
--[x] Maximum Subarray
+-[x] Maximum Subarray  
+-[x] Missing Number  
+-[ ] Three Sum  
+-[ ] Valid Anagram  
