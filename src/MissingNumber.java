@@ -1,6 +1,6 @@
 /*
- * CountingBits
- * Represents Counting Bits example
+ * MissingNumber
+ * Represents Missing Number example
  * Author: Daniel Hubmann
  * Last Change: 30.07.2023
  */
