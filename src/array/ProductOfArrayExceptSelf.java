@@ -1,3 +1,4 @@
+package array;
 /*
  * ProductOfArrayExceptSelf
  * Represents Product of Array Except Self example

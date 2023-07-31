@@ -1,3 +1,4 @@
+package binary;
 /*
  * NumberOfOneBits
  * Represents Number of 1 Bits Example

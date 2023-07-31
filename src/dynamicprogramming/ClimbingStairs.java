@@ -1,3 +1,4 @@
+package dynamicprogramming;
 /*
  * ClimbingStairs
  * Represents Climbing Stairs example

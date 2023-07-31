@@ -1,3 +1,4 @@
+package array;
 /*
  * ContainsDuplicate
  * Represents Contains Duplicate Example

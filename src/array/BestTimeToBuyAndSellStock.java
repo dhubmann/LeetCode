@@ -1,3 +1,4 @@
+package array;
 /*
  * BestTimeToBuyAndSellStock
  * Represents Best Time to Buy and Sell Stock example

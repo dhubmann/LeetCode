@@ -1,3 +1,4 @@
+package array;
 /*
  * MaximumSubarray
  * Represents Maximum Subarray Example

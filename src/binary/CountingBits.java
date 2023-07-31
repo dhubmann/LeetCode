@@ -1,3 +1,4 @@
+package binary;
 /*
  * CountingBits
  * Represents Counting Bits example
