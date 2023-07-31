@@ -1,10 +1,11 @@
-package array;
 /*
  * MaximumSubarray
  * Represents Maximum Subarray Example
  * Author: Daniel Hubmann
  * Last Change: 30.07.2023
  */
+
+package array;
 
 /**
  * Given an integer array nums, find the subarray with the largest sum, and

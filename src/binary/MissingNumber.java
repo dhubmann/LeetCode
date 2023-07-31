@@ -1,4 +1,3 @@
-package binary;
 /*
  * MissingNumber
  * Represents Missing Number example
@@ -6,6 +5,7 @@ package binary;
  * Last Change: 30.07.2023
  */
 
+package binary;
 import java.util.Arrays;
 
 /**

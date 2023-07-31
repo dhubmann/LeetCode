@@ -1,10 +1,11 @@
-package binary;
 /*
  * CountingBits
  * Represents Counting Bits example
  * Author: Daniel Hubmann
  * Last Change: 30.07.2023
  */
+
+package binary;
 
 /**
  * Given an integer n, return an array ans of length n + 1 such that for each i

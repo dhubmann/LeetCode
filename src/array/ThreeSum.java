@@ -1,4 +1,3 @@
-package array;
 /*
  * ThreeSum
  * Represents Three Sum Example
@@ -6,6 +5,7 @@ package array;
  * Last Change: 09.07.2023
  */
 
+package array;
 import java.util.HashMap;
 import java.util.HashSet;
 

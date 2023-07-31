@@ -1,4 +1,3 @@
-package string;
 /*
  * ValidAnagram
  * Represents Valid Anagram
@@ -6,6 +5,7 @@ package string;
  * Last Change: 29.07.2023
  */
 
+package string;
 import java.util.Arrays;
 
 /**

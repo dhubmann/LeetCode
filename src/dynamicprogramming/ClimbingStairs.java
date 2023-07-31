@@ -1,10 +1,11 @@
-package dynamicprogramming;
 /*
  * ClimbingStairs
  * Represents Climbing Stairs example
  * Author: Daniel Hubmann
  * Last Change: 30.07.2023
  */
+
+package dynamicprogramming;
 
 /**
  * You are climbing a staircase. It takes n steps to reach the top.

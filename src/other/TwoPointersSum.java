@@ -1,11 +1,11 @@
-package other;
-
 /*
  * TwoPointersSum
  * Represents example with two pointers technique (not a LeetCode example)
  * Author: Daniel Hubmann
  * Last Change: 01.08.2023
  */
+
+package other;
 
 public class TwoPointersSum {
 

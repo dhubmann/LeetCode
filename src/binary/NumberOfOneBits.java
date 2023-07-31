@@ -1,10 +1,11 @@
-package binary;
 /*
  * NumberOfOneBits
  * Represents Number of 1 Bits Example
  * Author: Daniel Hubmann
  * Last Change: 29.07.2023
  */
+
+package binary;
 
 /**
  * Write a function that takes the binary representation of an unsigned integer

@@ -1,10 +1,11 @@
-package array;
 /*
  * BestTimeToBuyAndSellStock
  * Represents Best Time to Buy and Sell Stock example
  * Author: Daniel Hubmann
  * Last Change: 01.08.2023
  */
+
+package array;
 
 /**
  * You are given an array prices where prices[i] is the price of a given stock

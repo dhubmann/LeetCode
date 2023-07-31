@@ -1,4 +1,3 @@
-package array;
 /*
  * ContainsDuplicate
  * Represents Contains Duplicate Example
@@ -6,6 +5,7 @@ package array;
  * Last Change: 07.07.2023
  */
 
+package array;
 import java.util.HashSet;
 
 /**
